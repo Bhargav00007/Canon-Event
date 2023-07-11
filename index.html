@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon Event</title>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        .center-image img {
+            border: 20px solid red;
+            border-radius: 50px;
+        }
+        .centered-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            height: 100%;
+        }
+        .custom-font {
+            font-family: "YourFontName", sans-serif;
+        }
+        .output {
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            text-align: center;
+            font-size: 30px; 
+            color: rgb(255, 255, 255); 
+            padding: 20px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="output" id="outputContainer">
+        <script src="index.js"></script>
+    </div>
+
+    <div class="centered-container">
+        <h1 class="custom-font">What is your Canon Event?</h1>
+        <h2 class="custom-font">Enter your Name:</h2>
+        <div>
+            <input style="text-align: center;" type="text" id="name" />
+            <button onclick="fn1(); audio.play();" id="btn1">Go</button>
+        </div>
+    </div>
+    
+    <div class="center-image">
+        <img src="image.png" />
+    </div>
+</body>
+</html>
