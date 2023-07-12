@@ -1,6 +1,6 @@
 const audio = new Audio();
 audio.src="canon.mp3";
-let canon = Math.floor(Math.random() * 11);
+let canon = Math.floor(Math.random() * 21);
 
 function fn1() {
     var user = document.getElementById("name").value;
@@ -31,7 +31,31 @@ function fn1() {
         canonEvent = "Your enemy will get a chance to destroy you!";
     } else if (canon === 10) {
         canonEvent = "You're dead...like fr!";
+    } else if (canon === 11) {
+        canonEvent = "Your greatest nightmare will come true!";
+    } else if (canon === 12) {
+        canonEvent = "Wait....NEVERMIND!";
+    } else if (canon === 13) {
+        canonEvent = "Imposter beside you!";
+    } else if (canon === 14) {
+        canonEvent = "Betrayed by close friends!";
+    } else if (canon === 15) {
+        canonEvent = "Good Luck!";
+    } else if (canon === 16) {
+        canonEvent = "You would probably feel lonely";
+    } else if (canon === 17) {
+        canonEvent = "You will feel ignored and forgotten";
+    } else if (canon === 18) {
+        canonEvent = "I am Sorry!";
+    } else if (canon === 19) {
+        canonEvent = "You Wont able to complete the work...again!";
+    } else if (canon === 20) {
+        canonEvent = "Guaranteed Downfall";
     }
+
+
+
+
     
     outputContainer.innerText += canonEvent;
 }
