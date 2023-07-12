@@ -35,9 +35,28 @@
             left: 50%; 
             transform: translate(-50%, -50%); 
             text-align: center;
-            font-size: 30px; 
+            font-size: 20px; 
             color: rgb(255, 255, 255); 
             padding: 20px;
+        }
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for screens up to 600px wide */
+            .centered-container {
+                font-size: 16px;
+            }
+            .center-image {
+                height: 70vh;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            /* Adjust styles for screens up to 400px wide */
+            .centered-container {
+                font-size: 14px;
+            }
+            .center-image {
+                height: 50vh;
+            }
         }
         
         
@@ -63,3 +82,4 @@
     </div>
 </body>
 </html>
+            
