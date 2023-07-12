@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15">
     <title>Canon Event</title>
     <style>
         body {
@@ -12,9 +13,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 90vh;
+            height: 70%;
         }
         .center-image img {
+            max-width: 100%;
+            height: auto;
+            width: auto\9; /* For IE8 and earlier */
             border: 20px solid red;
             border-radius: 50px;
         }
@@ -45,7 +49,7 @@
                 font-size: 16px;
             }
             .center-image {
-                height: 70vh;
+                height: 70%;
             }
         }
 
@@ -55,7 +59,7 @@
                 font-size: 14px;
             }
             .center-image {
-                height: 50vh;
+                height: 50%;
             }
         }
         
@@ -82,4 +86,3 @@
     </div>
 </body>
 </html>
-            
