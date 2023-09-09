@@ -1,6 +1,6 @@
 const audio = new Audio();
 audio.src="canon.mp3";
-let canon = Math.floor(Math.random() * 22);
+let canon = Math.floor(Math.random() * 23);
 
 function fn1() {
     var user = document.getElementById("name").value;
@@ -53,6 +53,8 @@ function fn1() {
         canonEvent = "Guaranteed Downfall";
     } else if (canon === 21) {
         canaonEvent = "Anything could happen";
+    } else if (canon === 22) {
+        canonEvent = "you will not recive what you want";
 
     }
 
